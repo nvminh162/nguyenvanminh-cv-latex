@@ -1,10 +1,10 @@
-# 📄 nvminh162-cv-latex
+# nvminh162-cv-latex
 
 > Personal modular LaTeX CV system by **Nguyen Van Minh (nvminh162)**
 
 ---
 
-## 🚀 Overview
+## Overview
 
 This repository is a **modular LaTeX-based CV system** designed to efficiently manage and generate multiple tailored resumes for different companies and roles.
 
@@ -12,17 +12,17 @@ Instead of maintaining separate CV files, this project follows a **single-source
 
 ---
 
-## 🧠 Key Features
+## Key Features
 
-* 🧩 **Modular structure** — reusable sections and components
-* 🎯 **Company-specific CVs** — tailored resumes per job
-* 🔁 **No duplication** — maintain content in one place
-* ⚙️ **Automated build** — generate all CVs with a script
-* 📦 **Clean output management** — organized PDF exports
+* **Modular structure** — reusable sections and components
+* **Company-specific CVs** — tailored resumes per job
+* **No duplication** — maintain content in one place
+* **Automated build** — generate all CVs with a script
+* **Clean output management** — organized PDF exports
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 nvminh162-cv-latex/
@@ -50,9 +50,9 @@ nvminh162-cv-latex/
 
 ---
 
-## ⚙️ How It Works
+## How It Works
 
-### 🔹 Base Layer (`base/`)
+### Base Layer (`base/`)
 
 Contains all shared content:
 
@@ -65,7 +65,7 @@ This acts as the **single source of truth**.
 
 ---
 
-### 🔹 Custom Layer (`companies/`)
+### Custom Layer (`companies/`)
 
 Each folder represents a tailored CV for a specific role/company.
 
@@ -83,7 +83,7 @@ Each includes:
 
 ---
 
-### 🔹 Overrides System
+### Overrides System
 
 Customize CV per company by:
 
@@ -93,7 +93,7 @@ Customize CV per company by:
 
 ---
 
-## 🛠️ Build Instructions
+## Build Instructions
 
 ### 1. Build a specific CV
 
@@ -118,7 +118,7 @@ output/
 
 ---
 
-## 📌 Best Practices
+## Best Practices
 
 * Keep all shared content inside `base/`
 * Avoid duplicating sections across CVs
@@ -131,7 +131,7 @@ output/
 
 ---
 
-## 📄 Output
+## Output
 
 Generated CVs are stored in:
 
@@ -146,20 +146,20 @@ These files are ready to:
 
 ---
 
-## 🧑‍💻 Author
+## Author
 
 **Nguyen Van Minh**
 GitHub: https://github.com/nvminh162
 
 ---
 
-## 📜 License
+## License
 
 This project is licensed under the MIT License.
 
 ---
 
-## ⭐ Philosophy
+## Philosophy
 
 > Treat your CV like a system — not a document.
 
