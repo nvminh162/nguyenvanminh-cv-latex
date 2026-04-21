@@ -1,88 +1,62 @@
-# Nguyen Van Minh - Modular LaTeX CV
+# Modular LaTeX CV Template
 
-A maintainable LaTeX CV system with one shared source and multiple company-specific versions.
+A modular LaTeX CV template with shared core content and easy profile-specific customization.
 
-## Why This Structure
+## Overview
 
-- Keep core content in one place.
-- Tailor each CV per role without duplication.
-- Update once, propagate everywhere.
+- Keep reusable CV content in one place.
+- Create multiple tailored CV versions without duplication.
+- Update once and reuse across profiles.
 
-## Project Layout
+## Structure
 
-- `base/`: shared CV source
-- `base/preamble.tex`: packages, typography, layout
-- `base/commands.tex`: reusable macros
-- `base/sections/`: content blocks (`header`, `experience`, `projects`, `education`, `skills`)
-- `companies/<company>/`: company-specific CV entry points
-- `companies/<company>/main.tex`: section composition/order
-- `companies/<company>/sections/`: company-specific sections (only files that differ)
-- `main.tex`: top-level entry file (recommended for Overleaf)
+- `base/` for shared content and layout.
+- `companies/` for profile-specific entry files and overrides.
+- `output/` for generated PDF files.
 
-## Overleaf Usage
+## Local Build
 
-1. Upload the full repository.
-2. In `Menu > Main document`, choose `main.tex` (recommended).
-3. Open `main.tex` and uncomment the profile you want to build.
-4. Click Recompile.
-
-If you prefer, you can also set `companies/<company>/main.tex` as the main document directly.
-
-Do not compile include files directly (such as `base/preamble.tex` or `base/sections/*`).
-
-## Local Build (recommended)
-
-Build from each profile folder (this avoids relative-path issues):
-
-```powershell
-cd companies/google-swe
-latexmk -xelatex -interaction=nonstopmode -file-line-error main.tex
-```
-
-```powershell
-cd companies/shopee-backend
-latexmk -xelatex -interaction=nonstopmode -file-line-error main.tex
-```
-
-For the generic base CV:
+Compile from the profile directory you want to build:
 
 ```powershell
 cd base
 latexmk -xelatex -interaction=nonstopmode -file-line-error main.tex
 ```
 
-Clean build artifacts:
+```powershell
+cd companies/<target-profile>
+latexmk -xelatex -interaction=nonstopmode -file-line-error main.tex
+```
+
+Clean temporary build artifacts:
 
 ```powershell
 latexmk -C
 ```
 
-## Create a New Company CV
+## Overleaf
 
-1. Create `companies/<new-company>/`.
-2. Add `main.tex` for that company.
-3. Import shared sections from `base/sections/`.
-4. For any section that needs custom content, create `companies/<new-company>/sections/<section>.tex` and import it in `main.tex`.
+1. Upload the full repository.
+2. Set the main document to either `base/main.tex` or `companies/<target-profile>/main.tex`.
+3. Recompile.
 
-## Customization Pattern
+Do not compile included partial files directly (such as files in `sections/`).
 
-Use direct component imports in each company `main.tex`:
+## Create a New Profile
 
-```tex
-\input{../../base/sections/header}
-\input{../../base/sections/experience}
-\input{../../base/sections/projects}
-\input{sections/skills} % company-specific
-\input{../../base/sections/education}
-```
+1. Create `companies/<new-profile>/`.
+2. Add `companies/<new-profile>/main.tex`.
+3. Reuse shared sections from `base/sections/`.
+4. Add profile-specific overrides only when needed.
 
-This keeps the architecture explicit and easy to maintain.
+## Notes
 
-## Included Examples
-
-- `companies/google-swe/`
-- `companies/shopee-backend/`
+This repository may contain sample CV content. Replace all personal and project details before using it for real applications.
 
 ## License
 
-MIT
+MIT License. See `LICENSE` for details.
+
+## Author
+
+- GitHub: `@nvminh162`
