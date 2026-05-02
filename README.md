@@ -21,13 +21,13 @@ Compile from the profile directory you want to build:
 ```powershell
 cd base
 
-xelatex -interaction=nonstopmode -file-line-error main.tex
+pdflatex main.tex
 ```
 
 ```powershell
 cd companies/<target-profile>
 
-xelatex -interaction=nonstopmode -file-line-error main.tex
+pdflatex main.tex
 ```
 
 ## Overleaf
