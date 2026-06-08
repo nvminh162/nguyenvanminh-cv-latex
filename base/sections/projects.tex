@@ -3,18 +3,30 @@
 \resumeSubHeadingListStart
 
   \resumeProjectHeading
-    {\textbf{Aurora Hotel Management System}}{Team size: 4 | Role: Full-stack Developer}
-    {\small \textbf{Tech Stack}: Java Spring Boot, Spring Security, PostgreSQL, Redis, VNPay, Spring AI (RAG)\par}
-    \vspace{1pt}
+    {\textbf{Aurora Hotel Management System}}{Team size: 4 | Role: Backend Developer}
     \resumeItemListStart
       \resumeItem{\textbf{Auth \& RBAC}: Built JWT access/refresh workflow with introspection and invalidation, OAuth2 resource server configuration, and 5 roles (Admin / Manager / Staff / Customer / Guest) with 70+ permissions.}
-      \resumeItem{\textbf{Hotel Operations}: Developed room/type/category/amenities modules, room state tracking, flexible pricing (base/weekend/holiday), media galleries, and multi-branch management with branch-level reporting.}
+      \resumeItem{\textbf{Hotel Operations}: Developed room/type/category modules, room state tracking, flexible pricing (base/weekend/holiday), media galleries, and multi-branch management with branch-level reporting.}
       \resumeItem{\textbf{Booking Engine}: Implemented real-time availability checks, multi-room booking flows, unique booking codes, and full modification/cancellation lifecycle handling.}
       \resumeItem{\textbf{Payments}: Integrated VNPay Sandbox with IPN processing, payment status tracking, and secure transaction hashing (SHA-256).}
-      \resumeItem{\textbf{Analytics \& AI}: Built revenue/occupancy dashboards and booking trend reports; integrated RAG chatbot with document upload, embeddings, pgvector semantic search, and streaming responses via Spring AI.}
+      \resumeItem{\textbf{AI Assistant}: Integrated AI-powered RAG chatbot using Google Gemini, LangChain4j, pgvector semantic search, document upload/chunking, and streaming responses.}
+      \resumeItem{\textbf{Deployment}: Deploy to AWS EC2 with Docker Hub CI/CD pipelines using GitHub Actions.}
     \resumeItemListEnd
     \vspace{1pt}
     {\small \textbf{Repository}: \href{https://github.com/nvminh162/aurora-hotel-management-system}{\myuline{nvminh162/aurora-hotel-management-system}}\par}
     {\small \textbf{Production}: \href{https://aurora-hotel.nvminh162.id.vn}{\myuline{aurora-hotel.nvminh162.id.vn}}\par}
+
+  \resumeProjectHeading
+    {\textbf{Chatly Messaging Platform}}{Team size: 4 | Role: Backend Developer}
+    \resumeItemListStart
+      \resumeItem{\textbf{Auth \& Security}: Built JWT authentication, refresh tokens, email verification, password reset/change, RBAC admin access, and JWT-secured WebSocket handshakes.}
+      \resumeItem{\textbf{Real-Time Chat}: Developed real-time chat APIs with Spring WebSocket/STOMP, supporting private/group conversations, typing/seen events, edit/recall/delete, forwarding, reactions, polls, pinned messages, mentions, unread counts, and search.}
+      \resumeItem{\textbf{Group Collaboration}: Implemented group collaboration backend with roles, invite links, join approvals, ownership transfer, notes, reminders, and scheduled reminder system messages.}
+      \resumeItem{\textbf{Data \& Storage}: Designed hybrid PostgreSQL + MongoDB persistence and integrated AWS S3 for media/file storage.}
+      \resumeItem{\textbf{Administration}: Built admin and social APIs for dashboard stats, audit logs, reports, users, posts, comments, reactions, saved posts, feeds, stories, reels, conversations, messages, and health checks.}
+    \resumeItemListEnd
+    \vspace{1pt}
+    {\small \textbf{Repository}: \href{https://github.com/nvminh162/chatly-social-platform}{\myuline{nvminh162/chatly-social-platform}}\par}
+    {\small \textbf{Production}: \href{https://chatly.nvminh162.id.vn}{\myuline{chatly.nvminh162.id.vn}}\par}
 
 \resumeSubHeadingListEnd
