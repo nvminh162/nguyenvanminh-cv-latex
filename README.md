@@ -11,7 +11,7 @@ A modular LaTeX CV template with shared core content and easy profile-specific c
 ## Structure
 
 - `base/` for shared content and layout.
-- `companies/` for profile-specific entry files and overrides.
+- `role/` for profile-specific entry files and overrides.
 - `output/` for generated PDF files.
 
 ## Local Build
@@ -25,7 +25,7 @@ pdflatex main.tex
 ```
 
 ```powershell
-cd companies/<target-profile>
+cd role/<target-profile>
 
 pdflatex main.tex
 ```
@@ -33,15 +33,15 @@ pdflatex main.tex
 ## Overleaf
 
 1. Upload the full repository.
-2. Set the main document to either `base/main.tex` or `companies/<target-profile>/main.tex`.
+2. Set the main document to either `base/main.tex` or `role/<target-profile>/main.tex`.
 3. Recompile.
 
 Do not compile included partial files directly (such as files in `sections/`).
 
 ## Create a New Profile
 
-1. Create `companies/<new-profile>/`.
-2. Add `companies/<new-profile>/main.tex`.
+1. Create `role/<new-profile>/`.
+2. Add `role/<new-profile>/main.tex`.
 3. Reuse shared sections from `base/sections/`.
 4. Add profile-specific overrides only when needed.
 
