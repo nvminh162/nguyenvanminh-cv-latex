@@ -1,22 +1,21 @@
 # Modular LaTeX CV Template
 
-A modular LaTeX CV template with shared core content and easy profile-specific customization.
+A modular LaTeX CV template with shared CV content and layout.
 
 ## Overview
 
-- Keep reusable CV content in one place.
-- Create multiple tailored CV versions without duplication.
-- Update once and reuse across profiles.
+- Keep CV content in one place.
+- Update shared content from the `base/` directory.
+- Generate the final PDF from the base document.
 
 ## Structure
 
-- `base/` for shared content and layout.
-- `role/` for profile-specific entry files and overrides.
+- `base/` for CV content and layout.
 - `output/` for generated PDF files.
 
 ## Local Build
 
-Compile from the profile directory you want to build:
+Compile from the base directory:
 
 ```powershell
 cd base
@@ -24,26 +23,13 @@ cd base
 pdflatex main.tex
 ```
 
-```powershell
-cd role/<target-profile>
-
-pdflatex main.tex
-```
-
 ## Overleaf
 
 1. Upload the full repository.
-2. Set the main document to either `base/main.tex` or `role/<target-profile>/main.tex`.
+2. Set the main document to `base/main.tex`.
 3. Recompile.
 
 Do not compile included partial files directly (such as files in `sections/`).
-
-## Create a New Profile
-
-1. Create `role/<new-profile>/`.
-2. Add `role/<new-profile>/main.tex`.
-3. Reuse shared sections from `base/sections/`.
-4. Add profile-specific overrides only when needed.
 
 ## Notes
 
