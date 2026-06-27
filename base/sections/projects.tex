@@ -30,26 +30,26 @@
     {\small \hspace*{0.10in}\textbf{Production}: \href{https://chatly.nvminh162.id.vn}{\myuline{https://chatly.nvminh162.id.vn}}\par}
 
   \resumeProjectHeading
-    {\textbf{Backend - Library Management System}}{Team size: 1 | Role: Backend Developer}
+    {\textbf{Nexatech E-commerce - Microservices}}{Team size: 4 | Role: Full-stack Developer (Identity, User, Audit, Notification)}
+    {\small \hspace*{0.10in}\textbf{Tech Stack}: Spring Boot, Kong Gateway, Keycloak, Apache Kafka, PostgreSQL, MongoDB, Redis, Next.js, AWS\par}
+    \resumeProjectItemListStart
+      \resumeItem{\textbf{Identity \& Access Management}: Implemented Keycloak-based login, register, token refresh/logout, social login support, password recovery and session revocation workflows.}
+      \resumeItem{\textbf{User \& Permission Management}: Built user profile, address book, onboarding, avatar upload and admin user lifecycle APIs with role/group/permission management facades.}
+      \resumeItem{\textbf{Audit Traceability}: Integrated Kafka-based audit events with centralized MongoDB audit storage, filtering, pagination, trace lookup and business-flow investigation support.}
+      \resumeItem{\textbf{Notification Service}: Built Kafka consumers for user/order/payment/inventory events, in-app notification APIs, email delivery with user preferences and scheduled retry handling for failed notifications.}
+    \resumeProjectItemListEnd
+    {\small \hspace*{0.10in}\textbf{Repository}: \href{https://github.com/nvminh162-archive/nexatech-ecommerce}{\myuline{https://github.com/nvminh162-archive/nexatech-ecommerce}}\par}
+
+  \resumeProjectHeading
+    {\textbf{Library Management System - Microservices}}{Team size: 1 | Role: Backend Developer}
     {\small \hspace*{0.10in}\textbf{Tech Stack}: Spring Boot, Kong Gateway, Axon Framework, AxonServer, Apache Kafka, PostgreSQL, Redis, Docker\par}
     \resumeProjectItemListStart
       \resumeItem{\textbf{Microservices Architecture}: Designed and built a distributed system with 6 independent Spring Boot services (Book, Borrow, Employee, User, Notification, Gateway), registered via Netflix Eureka Discovery and routed through Spring Cloud Gateway.}
       \resumeItem{\textbf{CQRS \& Event Sourcing}: Implemented CQRS with Axon Framework and AxonServer --- separating Command/Query models, persisting every state change as an immutable event stream with full audit history and point-in-time recovery.}
       \resumeItem{\textbf{Saga \& Distributed Transactions}: Engineered a BorrowingSaga orchestrating cross-service distributed transactions - checking book availability, validating employee discipline status, and automatically rolling back all affected services via compensating transactions on failure.}
-      \resumeItem{\textbf{Event-Driven Notifications}: Integrated Apache Kafka (KRaft mode) for async communication; implemented @RetryableTopic with exponential back-off 2 multiplier, 4 attempts and Dead Letter Topic (DLT) strategy for fault-tolerant email delivery.}
+      \resumeItem{\textbf{Event-Driven Notifications}: Integrated Apache Kafka for async communication; implemented Retryable Topic with exponential back-off 2 multiplier, 4 attempts and Dead Letter Topic (DLT) strategy for fault-tolerant email delivery.}
       \resumeItem{\textbf{Observability}: Integrated AxonServer dashboard for monitoring of message queues, cache state and event store.}
     \resumeProjectItemListEnd
     {\small \hspace*{0.10in}\textbf{Repository}: \href{https://github.com/nvminh162/backend-library-system}{\myuline{https://github.com/nvminh162/backend-library-system}}\par}
-
-  \resumeProjectHeading
-    {\textbf{Nexatech E-commerce Platform}}{Team size: 4 | Role: Full-stack Developer (Auth, Order, Payment)}
-    {\small \hspace*{0.10in}\textbf{Tech Stack}: Spring Boot, Kong Gateway, Keycloak, Apache Kafka, PostgreSQL, MongoDB, Redis, Next.js, AWS\par}
-    \resumeProjectItemListStart
-      \resumeItem{\textbf{Security \& IAM}: Implemented Keycloak authentication and IAM flows including JWT login/register, token refresh/logout, password recovery and role/group/session management.}
-      \resumeItem{\textbf{Order \& Checkout}: Developed order and checkout services, idempotency keys, inventory reservation, VNPay/COD payment orchestration, order state machine and timeout-based payment cancellation.}
-      \resumeItem{\textbf{Payment Integration}: Integrated VNPay payment service with signed payment URL generation, IPN/return verification, payment lifecycle tracking and COD confirmation.}
-      \resumeItem{\textbf{Reliability}: Improved reliability through Kafka event-driven communication, transactional outbox, processed-event deduplication, retry/circuit-breaker configuration, audit logs, snapshots and point-in-time traceability.}
-    \resumeProjectItemListEnd
-    {\small \hspace*{0.10in}\textbf{Repository}: \href{https://github.com/nvminh162-archive/nexatech-ecommerce}{\myuline{https://github.com/nvminh162-archive/nexatech-ecommerce}}\par}
 
 \resumeSubHeadingListEnd
