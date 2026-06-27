@@ -1,4 +1,4 @@
-# Modular LaTeX CV Template
+# Modular LaTeX CV - NGUYEN VAN MINH
 
 A modular LaTeX CV template with shared CV content and layout.
 
