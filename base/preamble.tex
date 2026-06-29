@@ -2,7 +2,7 @@
 % Preamble: packages + layout + typography
 %-------------------------
 
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,12pt]{article}
 
 \usepackage{latexsym}
 \usepackage[letterpaper,margin=0.55in,footskip=14pt]{geometry}
@@ -16,6 +16,8 @@
 \usepackage[english]{babel}
 \usepackage{tabularx}
 \usepackage{iftex}
+\usepackage{ragged2e}
+\usepackage{microtype}
 % only for pdflatex
 % \input{glyphtounicode}
 
@@ -67,7 +69,10 @@
 \urlstyle{same}
 
 \raggedbottom
-\raggedright
+\justifying
+\setlength{\emergencystretch}{2em}
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
 \setlength{\tabcolsep}{0in}
 
 % Section formatting
