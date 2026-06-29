@@ -44,7 +44,7 @@
     {\textbf{Library Management System - Microservices}}{Individual Project | Role: Backend Developer}
     {\small \hspace*{0.10in}\textbf{Tech Stack}: Spring Boot, Kong Gateway, Axon Framework, AxonServer, Apache Kafka, PostgreSQL, Redis, Docker\par}
     \resumeProjectItemListStart
-      \resumeItem{\textbf{Microservices Architecture}: Designed and built a distributed system with 6 independent Spring Boot services (Book, Borrow, Employee, User, Notification, Gateway), registered via Netflix Eureka Discovery and routed through Spring Cloud Gateway.}
+      \resumeItem{\textbf{Microservices Architecture}: Designed and built a distributed system with 6 independent Spring Boot services (Book, Borrow, Employee, User, Notification, Gateway), registered via Netflix Eureka Discovery and routed through Kong Gateway.}
       \resumeItem{\textbf{CQRS \& Event Sourcing}: Implemented CQRS with Axon Framework and AxonServer --- separating Command/Query models, persisting every state change as an immutable event stream with full audit history and point-in-time recovery.}
       \resumeItem{\textbf{Saga \& Distributed Transactions}: Engineered a BorrowingSaga orchestrating cross-service distributed transactions - checking book availability, validating employee discipline status, and automatically rolling back all affected services via compensating transactions on failure.}
       \resumeItem{\textbf{Event-Driven Notifications}: Integrated Apache Kafka for async communication; implemented Retryable Topic with exponential back-off 2 multiplier, 4 attempts and Dead Letter Topic (DLT) strategy for fault-tolerant email delivery.}
