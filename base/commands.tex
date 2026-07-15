@@ -3,33 +3,33 @@
 %-------------------------
 
 \newcommand{\resumeItem}[1]{
-  \item\small{#1}
+  \item{#1}
 }
 
 \newcommand{\resumeSubheading}[4]{
   \item
     \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & {\small #4}\\[4pt]
-      {\small #3} & {\small #2}\\
+      \textbf{#1} & {#4}\\[4pt]
+      {#3} & {#2}\\
     \end{tabular*}\vspace{-2pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
     \item
     \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-      {\small #1} & {\small #2} \\
+      {#1} & {#2} \\
     \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-      #1 & {\footnotesize #2} \\
+      #1 & {\textbf{#2}} \\
     \end{tabular*}\vspace{4pt}
 }
 
 \newcommand{\resumeProjectMeta}[2]{
-    {\small \hspace{0.22in}\textbf{#1}: #2\par}
+    {\hspace{0.22in}\textbf{#1}: #2\par}
 }
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
