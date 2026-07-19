@@ -1,0 +1,52 @@
+%-----------PROJECTS-----------
+\section{PROJECTS}
+\resumeSubHeadingListStart
+  \resumeProjectHeading
+    {\textbf{Aurora Hotel Management System}}{Team size: 4 | Role: Full-stack Developer}
+    \resumeItemListStart
+      \item \textbf{Description}: An enterprise hotel management platform with multi-branch operations, booking workflows,
+        revenue dashboards, staff scheduling, VNPay payments, and an AI-powered RAG chatbot using Google Gemini.
+      \item \textbf{Technologies}: Spring Boot, LangChain4j, PostgreSQL, pgvector, React.js, Redux Toolkit
+      \item \textbf{Responsibilities}
+        \begin{itemize}
+          \item Built responsive admin/customer interfaces with React.js, Redux Toolkit and Tailwind CSS for hotel operations, booking flows, dashboards and management modules.
+          \item Built JWT access/refresh workflow with introspection and invalidation, OAuth2 resource server configuration and 5 roles (Admin / Manager / Staff / Customer / Guest) with 70+ permissions.
+          \item Integrated AI-powered RAG chatbot using Google Gemini, LangChain4j, pgvector semantic search, document upload/chunking and streaming responses.
+          \item Deployed to AWS EC2 with Docker Hub CI/CD pipelines using GitHub Actions.
+        \end{itemize}
+      \item \textbf{Repository}: \href{https://github.com/nvminh162/aurora-hotel-management-system}{\myuline{https://github.com/nvminh162/aurora-hotel-management-system}}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Nexatech E-commerce - Microservices}}{Team size: 4 | Role: Full-stack Developer}
+    \resumeItemListStart
+      \item \textbf{Description}: A microservices e-commerce platform for PC hardware with Keycloak authentication, Kafka event
+        streams, VNPay checkout, flash sales, inventory management, and customer/admin frontends.
+      \item \textbf{Technologies}: Spring Boot, Kong Gateway, Keycloak, Kafka, PostgreSQL, MongoDB, Redis, Next.js
+      \item \textbf{Responsibilities}
+        \begin{itemize}
+          \item Implemented Keycloak-based login, register, token refresh/logout, social login support, password recovery and session revocation workflows.
+          \item Integrated Kafka-based audit events with centralized MongoDB audit storage, filtering, pagination, trace lookup and business-flow investigation support.
+          \item Built Kafka consumers for user/order/payment/inventory events, in-app notification APIs, email delivery with user preferences and scheduled retry handling for failed notifications.
+          \item Built role-based admin dashboard with React, Redux Toolkit, and Tailwind CSS for user management, product administration, order/payment monitoring, and internal operation modules.
+        \end{itemize}
+      \item \textbf{Repository}: \href{https://github.com/nvminh162-archive/nexatech-ecommerce}{\myuline{https://github.com/nvminh162-archive/nexatech-ecommerce}}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Library Management System - Microservices}}{Individual Project | Role: Backend Developer}
+    \resumeItemListStart
+      \item \textbf{Description}: A CQRS/Event Sourcing microservices system with 6 Spring Boot services, Axon Framework,
+        AxonServer event store, Kafka messaging, and a BorrowingSaga for cross-service transaction orchestration.
+      \item \textbf{Technologies}: Spring Boot, Kong Gateway, Axon Framework, AxonServer, Kafka, PostgreSQL, Redis
+      \item \textbf{Responsibilities}
+        \begin{itemize}
+          \item Built 6 Spring Boot services with Netflix Eureka Discovery and Kong Gateway routing.
+          \item Implemented CQRS with Axon Framework/AxonServer, event streams, audit history, and point-in-time recovery.
+          \item Built BorrowingSaga to validate borrowing rules and roll back failed cross-service transactions.
+          \item Integrated AxonServer dashboard to monitor message queues, cache state, and event store.
+        \end{itemize}
+      \item \textbf{Repository}: \href{https://github.com/nvminh162/backend-library-system}{\myuline{https://github.com/nvminh162/backend-library-system}}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
