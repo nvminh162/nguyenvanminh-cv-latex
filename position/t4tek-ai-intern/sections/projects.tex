@@ -1,0 +1,50 @@
+%-----------PROJECTS-----------
+\section{PROJECTS}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading
+    {\textbf{Aurora Hotel Management System}}{Team size: 4 | Role: Full-stack Developer}
+    \resumeItemListStart
+      \item \textbf{Description}: Enterprise hotel management platform with multi-branch operations, booking workflows, revenue dashboards, staff scheduling, VNPay payments, role-based access control, and an AI-powered RAG chatbot using Google Gemini.
+      \item \textbf{Technologies}: Spring Boot, LangChain4j, PostgreSQL, pgvector, React.js, Redux Toolkit, Tailwind CSS, Docker, GitHub Actions, AWS
+      \item \textbf{Responsibilities}
+        \begin{itemize}
+          \item Built responsive admin/customer web interfaces with React.js, Redux Toolkit, and Tailwind CSS for hotel operations, booking flows, dashboards, and management modules.
+          \item Implemented JWT access/refresh authentication, token introspection/invalidation, OAuth2 resource server, and role-based authorization with 5 roles and 70+ permissions.
+          \item Integrated an AI-powered RAG chatbot using Google Gemini, LangChain4j, pgvector semantic search, document upload and chunking, and streaming responses.
+          \item Deployed the application to AWS EC2 using Docker Hub and GitHub Actions CI/CD pipelines.
+        \end{itemize}
+      \item \textbf{Repository}: \href{https://github.com/nvminh162/aurora-hotel-management-system}{\myuline{https://github.com/nvminh162/aurora-hotel-management-system}}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Nexatech E-commerce -- Microservices}}{Team size: 4 | Role: Full-stack Developer}
+    \resumeItemListStart
+      \item \textbf{Description}: A microservices e-commerce platform for PC hardware with authentication, inventory management, order/payment workflows, flash sales, event-driven processing, and customer/admin web interfaces.
+      \item \textbf{Technologies}: Spring Boot, Kong Gateway, Keycloak, Kafka, PostgreSQL, MongoDB, Redis, Next.js
+      \item \textbf{Responsibilities}
+        \begin{itemize}
+          \item Implemented Keycloak-based authentication including login, registration, token refresh/logout, social login support, password recovery, and session revocation.
+          \item Integrated Kafka-based audit events with centralized MongoDB storage, filtering, pagination, trace lookup, and business-flow investigation support.
+          \item Built Kafka consumers for user, order, payment, and inventory events, along with in-app notification APIs, email delivery preferences, and scheduled retry handling.
+          \item Built a role-based admin dashboard with React.js, Redux Toolkit, and Tailwind CSS for user, product, order, payment, and internal operation management.
+        \end{itemize}
+      \item \textbf{Repository}: \href{https://github.com/nvminh162-archive/nexatech-ecommerce}{\myuline{https://github.com/nvminh162-archive/nexatech-ecommerce}}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Library Management System -- Microservices}}{Individual Project | Role: Backend Developer}
+    \resumeItemListStart
+      \item \textbf{Description}: Backend management system built with six Spring Boot microservices, CQRS, Event Sourcing, Axon Framework, AxonServer, Kafka messaging, and a Borrowing Saga for cross-service transaction orchestration.
+      \item \textbf{Technologies}: Spring Boot, Kong Gateway, Axon Framework, AxonServer, Kafka, PostgreSQL, Redis
+      \item \textbf{Responsibilities}
+        \begin{itemize}
+          \item Built six Spring Boot services with Netflix Eureka service discovery and Kong Gateway routing.
+          \item Implemented CQRS using Axon Framework and AxonServer, including event streams, audit history, and point-in-time recovery.
+          \item Built a Borrowing Saga to validate borrowing rules and roll back failed cross-service transactions.
+          \item Integrated the AxonServer dashboard to monitor message queues, cache state, and the event store.
+        \end{itemize}
+      \item \textbf{Repository}: \href{https://github.com/nvminh162/backend-library-system}{\myuline{https://github.com/nvminh162/backend-library-system}}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
