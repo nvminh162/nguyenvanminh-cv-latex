@@ -3,31 +3,17 @@
 \resumeSubHeadingListStart
 
   \resumeProjectHeading
-    {\textbf{Nexatech E-commerce -- Microservices}}{Team size: 4 | Role: Full-stack Developer}
-    \resumeItemListStart
-      \item \textbf{Description}: Microservices e-commerce platform for PC hardware with authentication, event-driven services, inventory/order management, VNPay payments, flash sales, and web applications.
-      \item \textbf{Technologies}: Spring Boot, Kong Gateway, Keycloak, Kafka, PostgreSQL, MongoDB, Redis, Next.js, React.js
-      \item \textbf{Responsibilities}
-        \begin{itemize}
-          \item Implemented Keycloak authentication: login, registration, token refresh/logout, social login, password recovery, and session revocation.
-          \item Integrated Kafka audit events with centralized MongoDB storage, filtering, pagination, trace lookup, and business-flow investigation.
-          \item Built Kafka consumers for user/order/payment/inventory events, in-app notification APIs, email preferences, and retry handling.
-          \item Built role-based admin web app with React.js, Redux Toolkit, and Tailwind CSS for user, product, order, payment, and operation management.
-        \end{itemize}
-      \item \textbf{Repository}: \href{https://github.com/nvminh162-archive/nexatech-ecommerce}{\myuline{https://github.com/nvminh162-archive/nexatech-ecommerce}}
-    \resumeItemListEnd
-
-  \resumeProjectHeading
     {\textbf{Aurora Hotel Management System}}{Team size: 4 | Role: Full-stack Developer}
     \resumeItemListStart
-      \item \textbf{Description}: Enterprise hotel management platform with booking workflows, revenue dashboards, staff scheduling, VNPay payments, role-based access control, and an AI RAG assistant.
-      \item \textbf{Technologies}: Spring Boot, LangChain4j, PostgreSQL, pgvector, React.js, Redux Toolkit, Tailwind CSS, Docker, AWS
+      \item \textbf{Description}: An enterprise hotel management platform with multi-branch operations, booking workflows,
+        revenue dashboards, staff scheduling, VNPay payments, and an AI-powered RAG chatbot using Google Gemini.
+      \item \textbf{Technologies}: Spring Boot, LangChain4j, PostgreSQL, pgvector, React.js, Redux Toolkit
       \item \textbf{Responsibilities}
         \begin{itemize}
-          \item Built responsive admin/customer UIs with React.js, Redux Toolkit, and Tailwind CSS for hotel booking flows and management modules.
-          \item Implemented JWT authentication, OAuth2 resource server, and role-based authorization with five roles and 70+ permissions.
-          \item Integrated AI-powered RAG assistant using Google Gemini, LangChain4j, pgvector search, and streaming responses.
-          \item Deployed the application to AWS EC2 using Docker Hub and GitHub Actions CI/CD pipelines.
+          \item Built responsive admin/customer interfaces with React.js, Redux Toolkit and Tailwind CSS for hotel operations, booking flows, dashboards and management modules.
+          \item Built JWT access/refresh workflow with introspection and invalidation, OAuth2 resource server configuration and 5 roles (Admin / Manager / Staff / Customer / Guest) with 70+ permissions.
+          \item Integrated AI-powered RAG chatbot using Google Gemini, LangChain4j, pgvector semantic search, document upload/chunking and streaming responses.
+          \item Deployed to AWS EC2 with Docker Hub CI/CD pipelines using GitHub Actions.
         \end{itemize}
       \item \textbf{Repository}: \href{https://github.com/nvminh162/aurora-hotel-management-system}{\myuline{https://github.com/nvminh162/aurora-hotel-management-system}}
     \resumeItemListEnd
@@ -35,16 +21,33 @@
   \resumeProjectHeading
     {\textbf{Chatly Social Platform}}{Team size: 4 | Role: Full-stack Developer}
     \resumeItemListStart
-      \item \textbf{Description}: Real-time social platform with web/mobile clients, private/group chat, feeds, media sharing, stories, reels, and voice/video calling via third-party integration.
-      \item \textbf{Technologies}: Spring Boot, WebSocket, PostgreSQL, MongoDB, React.js, React Native, Zustand, AWS S3, Agora
+      \item \textbf{Description}: A real-time social networking platform with private/group chat, social feeds, stories, reels,
+        voice/video calls via Agora, file sharing through AWS S3, and cross-platform web and mobile clients.
+      \item \textbf{Technologies}: Spring Boot, WebSocket, PostgreSQL, MongoDB, React.js, React Native, Zustand
       \item \textbf{Responsibilities}
         \begin{itemize}
-          \item Built responsive web/mobile UIs for social feeds, conversations, chat, stories, and reels with RESTful API integration.
-          \item Developed Spring WebSocket/STOMP APIs for private/group chat, typing/seen status, reactions, mentions, and search.
-          \item Designed hybrid PostgreSQL and MongoDB persistence and integrated AWS S3 for media storage.
-          \item Implemented voice/video call workflows with Agora token generation, socket signaling, and call history APIs.
+          \item Built responsive social UI flows for feeds, conversations, real-time chat, stories and reels with reusable components and RESTful API integration.
+          \item Developed Spring WebSocket/STOMP chat APIs for private/group conversations, typing/seen status, message actions, reactions, mentions, unread counts, and search.
+          \item Designed hybrid PostgreSQL + MongoDB persistence and integrated AWS S3 for media/file storage.
+          \item Implemented voice/video call workflows with Agora token generation, socket-based call signaling, shared call state, incoming call UI, and call history APIs.
         \end{itemize}
       \item \textbf{Repository}: \href{https://github.com/nvminh162/chatly-social-platform}{\myuline{https://github.com/nvminh162/chatly-social-platform}}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Nexatech E-commerce - Microservices}}{Team size: 4 | Role: Full-stack Developer}
+    \resumeItemListStart
+      \item \textbf{Description}: A microservices e-commerce platform for PC hardware with Keycloak authentication, Kafka event
+        streams, VNPay checkout, flash sales, inventory management, and customer/admin frontends.
+      \item \textbf{Technologies}: Spring Boot, Kong Gateway, Keycloak, Kafka, PostgreSQL, MongoDB, Redis, Next.js
+      \item \textbf{Responsibilities}
+        \begin{itemize}
+          \item Implemented Keycloak-based login, register, token refresh/logout, social login support, password recovery and session revocation workflows.
+          \item Integrated Kafka-based audit events with centralized MongoDB audit storage, filtering, pagination, trace lookup and business-flow investigation support.
+          \item Built Kafka consumers for user/order/payment/inventory events, in-app notification APIs, email delivery with user preferences and scheduled retry handling for failed notifications.
+          \item Built role-based admin dashboard with React, Redux Toolkit, and Tailwind CSS for user management, product administration, order/payment monitoring, and internal operation modules.
+        \end{itemize}
+      \item \textbf{Repository}: \href{https://github.com/nvminh162-archive/nexatech-ecommerce}{\myuline{https://github.com/nvminh162-archive/nexatech-ecommerce}}
     \resumeItemListEnd
 
 \resumeSubHeadingListEnd
